@@ -1,5 +1,5 @@
-// var maxNumberUtente;
-// var numUtente;
+var maxNumberUtente;
+var numUtente;
 // BONUS
 var level= prompt("Scegli la difficoltà: 1,2 0 3");
 switch(level){
