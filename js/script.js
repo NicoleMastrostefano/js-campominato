@@ -1,7 +1,9 @@
 var maxNumberUtente;
 var numUtente;
+
 // BONUS
-var level= prompt("Scegli la difficoltà: 1,2 0 3");
+var level= prompt("Scegli la difficoltà: 1,2 o 3");
+
 switch(level){
   case "3":
     maxNumberUtente= 50;
@@ -13,6 +15,7 @@ switch(level){
     maxNumberUtente =100;
 }
   listaNumUtente = maxNumberUtente - 16;
+
 
 // Il computer deve generare 16 numeri casuali tra 1 e 100.
 // I numeri non possono essere duplicati.
@@ -47,7 +50,7 @@ while (listaNumUtente.length < maxNumberUtente && numPresente == false) {
     if (in_array(numCasualiPc, numUtente) == true) {
       numPresente = true;
       console.log("Hai preso una mina!");
-      document.write("GAME OVER"+"<br>");
+      document.write("GAME OVER"+"<br>"+"Hai preso una mina!"+ "<br>");
 
       // Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha inserito un numero consentito.
     } else {
@@ -57,8 +60,6 @@ while (listaNumUtente.length < maxNumberUtente && numPresente == false) {
 }
 
 console.log(punti + " "+"punti");
-document.write("Le mine erano nelle posizioni:"+ numCasualiPc+"<br>");
-document.write("I tuoi numeri:"+ listaNumUtente +"<br>");
 document.write("Punteggio:" + " "+ punti+"<br>" );
 
 
